@@ -7,22 +7,30 @@
 </head>
 <body>
   <div class="container">
-    <div class="pointer"></div>
-    <div class="wheel" id="wheel">
-      <div class="slice" style="--i:0"><span>nix</span></div>
-      <div class="slice" style="--i:1"><span>yes</span></div>
-      <div class="slice" style="--i:2"><span>no</span></div>
-      <div class="slice" style="--i:3"><span>yes</span></div>
-      <div class="slice" style="--i:4"><span>no</span></div>
-      <div class="slice" style="--i:5"><span>yes</span></div>
-      <div class="slice" style="--i:6"><span>no</span></div>
-      <div class="slice" style="--i:7"><span>yes</span></div>
-      <div class="slice" style="--i:8"><span>no</span></div>
-      <div class="slice" style="--i:9"><span>yes</span></div>
-      <div class="slice" style="--i:10"><span>no</span></div>
-    </div>
+    <input type="text" id="questionInput" placeholder="Type your question..." />
+    <input type="text" id="option1" placeholder="Option 1" />
+    <input type="text" id="option2" placeholder="Option 2" />
+    <input type="text" id="option3" placeholder="Option 3" />
+
+    <label>
+      <input type="checkbox" id="toggleText" checked />
+      Show slice text on wheel
+    </label>
+    
     <button id="spinBtn">SPIN</button>
+
+    <div class="pointer"></div>
+    <div class="wheel" id="wheel"></div>
   </div>
+
+  <div class="result-overlay" id="resultOverlay">
+    <div class="result-box">
+      <p id="questionText"></p>
+      <p id="resultText"></p>
+      <button id="closeBtn">CLOSE</button>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
