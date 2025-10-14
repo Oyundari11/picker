@@ -63,7 +63,7 @@ body {
 
 button {
   position: absolute;
-  top: calc(50% - 25dvh + 4rem);
+  top: calc(0px - 2.5rem);
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
@@ -121,4 +121,11 @@ button {
   left: 60%;
   transform: translate(-50%, -50%) rotate(calc(-33deg * var(--i)));
   color: var(--white);
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 60dvh;
+    height: 60dvh;
+  }
 }
