@@ -47,6 +47,21 @@ button {
 
 /* wheel */
 
+.wheel-container {
+  position: relative;
+}
+
+.pointer {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 16px;
+  background: #fff;
+  z-index: 10;
+}
+
 #wheel {
   width: 50dvw;
   height: 50dvw;
@@ -76,17 +91,6 @@ button {
   position: absolute;
   top: 25%;
   left: 56%;
-}
-
-.pointer {
-  position: absolute;
-  top: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 16px;
-  background: #fff;
-  z-index: 10;
 }
 
 .result-overlay {
